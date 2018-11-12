@@ -13,10 +13,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3332/instructors")
+
+    fetch("http://68.183.60.166:3332/instructors")
       .then(res => res.json())
       .then(
         (result) => {
+          console.log('fetch req');
           this.setState({
             isLoaded: true,
             instructor: result
