@@ -18,6 +18,4 @@ lib-cov
 build/
 dist/
 
-Dockerfile
 
-docker-compose
